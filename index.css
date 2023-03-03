@@ -4,10 +4,13 @@
 
 :root {
     /* colors */
-    --desatured-red: 0, 36%, 70%;
-    --soft-red: 0, 93%, 68%;
+    --primary-soft-blue: 215, 51%, 70%;
+    --primary-cyan: 178, 100%, 50%;
 
-    --dark-grayish-red: 0, 6%, 24%;
+    --very-dark-blue-main-bg: 217, 54%, 11%;
+    --very-dark-blue-card-bg: 216, 50%, 16%;
+    --very-dark-blue-line: 215, 32%, 27%;
+    --white: 0, 0%, 100%;
 
     /* font-sizes */
     --fs-900: 9.375rem;
@@ -104,6 +107,6 @@ select {
 }
 
 body {
+    background-color: hsl( var(--very-dark-blue-main-bg) );
+    color: hsl( var(--white) );
 }
-
-
