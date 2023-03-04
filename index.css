@@ -109,4 +109,132 @@ select {
 body {
     background-color: hsl( var(--very-dark-blue-main-bg) );
     color: hsl( var(--white) );
+    height: 100vh;
+    width: 100vw;
 }
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    width: 250px;
+}
+
+.card {
+
+    width: 100px;
+    height: 100px;
+}
+
+.attribution {
+    text-align: center;
+    margin-bottom: 5rem;
+    font-size: var(--fs-200);
+    font-weight: lighter;
+}
+
+/************************/
+.flex-container {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.row {
+    width: 350px;
+    padding: 1.5rem;
+    background-color: hsl(var(--very-dark-blue-card-bg));
+
+    box-shadow: 0 0 15px hsl(var(--very-dark-blue-card-bg));
+}
+.mb-15 {
+    margin-bottom: 1.5rem;
+}
+.ml-1 {
+    margin-left: .5rem;
+}
+.br-15 {
+    border-radius: 15px;
+}
+.mr-05 {
+    margin-right: .5rem;
+}
+
+h1 {
+    font-size: var(--fs-500);
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.eth-infos {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    line-height: 1;
+}
+.eth {
+    color: hsl(var(--primary-cyan));
+}
+hr {
+    border: .01rem solid hsl(var(--very-dark-blue-line));
+    margin: 1rem auto;
+}
+p {
+    font-weight: 300;
+}
+.color-primary-soft-blue {
+    color: hsl(var(--primary-soft-blue));
+}
+.creator {
+    align-items: center;
+}
+.creator img {
+    height: 35px;
+    border-radius: 50%;
+    border: 1px solid hsl(var(--white));
+    aspect-ratio: 1;
+    margin-right: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: hsl(var(--white));
+    transition: .3s ease-in-out;
+}
+a:hover {
+    color: hsl(var(--primary-cyan));
+}
+
+figure {
+    position: relative;
+}
+.hover-image figure {
+    background: hsl(var(--primary-cyan));
+    cursor: pointer;
+}
+.hover-image figure .img-preview {
+    opacity: 1;
+    transition: .3s ease-in-out;
+}
+.hover-image figure:hover img {
+    opacity: .5;
+}
+.icon-view {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    opacity: 0;
+}
+.hover-image figure:hover .icon-view {
+    opacity: 1;
+}
+
